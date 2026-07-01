@@ -1,0 +1,533 @@
+@font-face {
+    font-family: 'DM Sans'; /* El nombre que tú elijas para usar en el código */
+    src: url('fonts/DMSans-Regular.ttf') format('truetype'); /* Nombre exacto de tu archivo y su formato */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DM Sans Bold'; /* El nombre que tú elijas para usar en el código */
+    src: url('fonts/DMSans-Bold.ttf') format('truetype'); /* Nombre exacto de tu archivo y su formato */
+    font-weight: normal;
+    font-style: normal;
+}
+/* Estilos Base y Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'DM Sans', sans-serif;
+    background-color: #f4f4f4;
+    color: #384032;
+    min-height: 100vh;
+
+}
+
+header{
+    font-size: 3rem;
+    padding: 50px;
+}
+
+main{
+    font-size: 2rem;
+    flex: 1;
+}
+
+.home{
+    padding: 50px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.logoUnidadFAD{
+    display: flex;
+    justify-content: flex-end; /* Empuja la imagen hacia la derecha */
+    width: 100%;
+}
+
+.logoUnidadFAD img {
+    height: 60px;              
+}
+
+
+.button {
+    /* 1. Comportamiento y forma */
+    display: inline-block;    /* Permite asignarle márgenes y rellenos como a un botón */
+    padding: 12px 24px;       /* Espacio interno (arriba/abajo, izquierda/derecha) */
+    border-radius: 6px;       /* Bordes redondeados */
+    
+    /* 2. Colores y texto */
+    background-color: #cc9e51; /* Color de fondo azul */
+    color: #ffffff;           /* Color del texto blanco */
+    text-decoration: none;    /* Quita la línea subrayada típica de los enlaces */
+    
+    /* 3. Tipografía y alineación */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    
+    /* 4. Efecto visual suave al pasar el mouse */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;          /* Asegura que aparezca la mano al pasar el cursor */
+}
+
+/* Efecto 'Hover' (cuando el usuario pasa el mouse por encima) */
+.boton-continuar:hover {
+    background-color: #0056b3; /* Se vuelve un azul más oscuro */
+    transform: translateY(-2px); /* Un pequeño salto hacia arriba muy elegante */
+}
+
+/* Efecto 'Active' (cuando el usuario hace clic) */
+.boton-continuar:active {
+    transform: translateY(0);    /* Vuelve a su posición original al presionarlo */
+}
+
+.card-container {
+    display: flex;
+    align-items: center;     /* Centrado vertical */
+    
+    flex-wrap: wrap;         /* ¡ESTA ES LA MAGIA! Permite que salten de línea si no caben */
+    gap: 20px;
+
+    background-color: #f0f2f5; /* Un fondo gris claro para que resalte la tarjeta */
+    margin: 0;
+}
+
+
+.card{
+    font-size: 3rem;
+    text-decoration: none;
+    font-family: 'DM Sans Bold', sans-serif;
+    color: #384032;
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-align: center;        /* Centra el texto dentro de la tarjeta */
+    display: flex;
+    flex-direction: column;   /* Alinea el contenido hacia abajo como lista */ 
+    justify-content: center;
+}
+
+
+
+.odd{
+    background-color: #384032;
+    color:#FFFFFF;
+}
+
+.card:hover{
+    background-color: #cc9e51; /* Se vuelve un azul más oscuro */
+    transform: translateY(-2px); /* Un pequeño salto hacia arriba muy elegante */
+}
+
+.even:hover{
+    background-color: #cc9e51; /* Se vuelve un azul más oscuro */
+    transform: translateY(-2px); /* Un pequeño salto hacia arriba muy elegante */
+    color: #FFFFFF;
+}
+
+
+/* Contenedor que alinea los íconos horizontalmente */
+.redes-sociales {
+    display: flex;
+    justify-content: center; /* Centra el bloque de íconos horizontalmente */
+    gap: 15px;               /* Añade una separación exacta entre cada ícono */
+    margin-top: 20px;        /* Separa los íconos del contenido de arriba */
+    width: 100%;             /* Asegura que ocupe todo el ancho disponible */
+}
+
+/* Estilos individuales para cada ícono */
+.icono-red {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 40px;             /* Ancho del círculo */
+    height: 40px;            /* Alto del círculo */
+    border-radius: 50%;      /* Hace que el fondo sea perfectamente redondo */
+    background-color: #cc9e51; /* Color gris claro de fondo */
+    color: #FFFFFF;          /* Color del ícono */
+    font-size: 18px;         /* Tamaño del ícono */
+    text-decoration: none;   /* Quita cualquier subrayado */
+    
+    /* Efecto visual suave al pasar el mouse */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto Hover (Cuando el usuario pasa el cursor) */
+.icono-red:hover {
+    background-color: #007BFF; /* Cambia a azul (puedes personalizarlo) */
+    color: #ffffff;           /* El ícono se vuelve blanco */
+    transform: scale(1.1);    /* Crece un 10% de forma sutil */
+}
+.messageh1{
+    font-size: 2rem;
+}
+.message{
+    font-size: 1.2rem;
+}
+
+/* Contenedor del mapa */
+/* Contenedor externo */
+.contenedor-mapa-completo {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo del texto de ayuda */
+.indicador-scroll {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    background-color: #e9ecef;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Ocultar el texto de ayuda en pantallas grandes donde sí cabe todo el mapa */
+@media (min-width: 768px) {
+    .indicador-scroll {
+        display: none;
+    }
+}
+
+/* El contenedor con scroll */
+.contenedor-mapa {
+    width: 100%;
+    overflow-x: auto; 
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    
+    /* Suavizado de scroll en móviles */
+    -webkit-overflow-scrolling: touch; 
+}
+
+/* La imagen del plano */
+.mapa-responsivo {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-width: 750px; /* Lo subimos a 750px para garantizar que se vea grande y legible en móviles */
+}
+
+/* TRUCO EXTRA: Diseñar una barra de scroll fija y visible para móviles (Webkit) */
+.contenedor-mapa::-webkit-scrollbar {
+    height: 8px; /* Grosor de la barra horizontal */
+}
+
+.contenedor-mapa::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color del fondo de la barra */
+    border-radius: 8px;
+}
+
+.contenedor-mapa::-webkit-scrollbar-thumb {
+    background: #cc9e51; /* Color del indicador (Azul) para que llame la atención */
+    border-radius: 8px;
+}
+
+.contenedor-mapa::-webkit-scrollbar-thumb:hover {
+    background: #cc9e51;
+}
+
+
+/* Contenedor principal de la guía */
+.guia-edificios {
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.guia-edificios h2 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.subtitulo-guia {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Bloque por cada edificio */
+.tarjeta-edificio {
+    background-color: #ffffff;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.tarjeta-edificio h3 {
+    margin-top: 0;
+    color: #222;
+    border-bottom: 2px solid #cc9e51; /* Línea decorativa azul */
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.tag-edificio {
+    font-size: 15px;
+    color: #666;
+    font-weight: normal;
+}
+
+/* Estilos para el elemento desplegable (Acordeón) */
+.nivel-desplegable {
+    background-color: #f8f9fa;
+    border: 1px solid #dcdfe3;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Encabezado del desplegable (Donde se hace clic) */
+.nivel-desplegable summary {
+    padding: 12px 15px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    list-style: none; /* Quita la flecha por defecto en algunos navegadores */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Añadir nuestra propia flecha dinámica */
+.nivel-desplegable summary::after {
+    content: '▶';
+    font-size: 12px;
+    color: #cc9e51;
+    transition: transform 0.2s ease;
+}
+
+/* Rotación de la flecha cuando está abierto */
+.nivel-desplegable[open] summary::after {
+    transform: rotate(90deg);
+}
+
+/* Contenedor de la lista interna */
+.contenido-nivel {
+    padding: 15px 20px;
+    background-color: #ffffff;
+    border-top: 1px solid #dcdfe3;
+}
+
+.contenido-nivel ul {
+    list-style: none; /* Quitamos los puntitos por defecto */
+    padding: 0;
+    margin: 0;
+}
+
+.contenido-nivel li {
+    padding: 8px 0;
+    color: #444;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el ícono y el texto */
+    border-bottom: 1px dashed #eee;
+}
+
+.contenido-nivel li:last-child {
+    border-bottom: none; /* Quita la línea al último elemento */
+}
+
+/* Color de los íconos */
+.contenido-nivel li i {
+    color: #cc9e51;
+    width: 20px;
+    text-align: center;
+}
+
+/* Contenedor general de la sección */
+.seccion-nomenclatura {
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.seccion-nomenclatura h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Estilo para tu texto corto */
+.texto-introductorio {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Contenedor para enmarcar y centrar la imagen */
+.contenedor-imagen-nomenclatura {
+    background-color: #ffffff;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+/* La imagen se adaptará al tamaño de la pantalla sin perder proporciones */
+.imagen-nomenclatura {
+    width: 100%;
+    max-width: 600px; /* Tamaño máximo recomendado para que tu infografía luzca nítida */
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+
+.seccion-directorio {
+    width: 100%;
+    max-width: 1100px;
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.seccion-directorio h2 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.subtitulo-directorio {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.tabla-responsiva {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.tabla-directorio {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+/* Reducción de relleno en celdas de encabezado */
+.tabla-directorio th {
+    background-color: #cc9e51;
+    color: #ffffff;
+    padding: 10px 12px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Distribución de anchos proporcionales en pantallas de escritorio */
+.tabla-directorio th:nth-child(1) { width: 30%; } /* Cargo */
+.tabla-directorio th:nth-child(2) { width: 22%; } /* Grado */
+.tabla-directorio th:nth-child(3) { width: 23%; } /* Nombre */
+.tabla-directorio th:nth-child(4) { width: 8%; }  /* Extensión */
+.tabla-directorio th:nth-child(5) { width: 17%; } /* Correo */
+
+/* Reducción de relleno y control anti-desbordamiento en datos */
+.tabla-directorio td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #eee;
+    color: #444;
+    font-size: 13.5px;
+    
+    /* Previene que nombres o correos largos empujen la tabla hacia afuera */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.tabla-directorio tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.tabla-directorio td a {
+    color: #cc9e51;
+    text-decoration: none;
+}
+
+.tabla-directorio td a:hover {
+    text-decoration: underline;
+}
+
+/* Adaptación responsiva para pantallas móviles (Celulares) */
+@media (max-width: 768px) {
+    .tabla-directorio thead {
+        display: none;
+    }
+    
+    .tabla-directorio, .tabla-directorio tbody, .tabla-directorio tr, .tabla-directorio td {
+        display: block;
+        width: 100%;
+    }
+    
+    .tabla-directorio tr {
+        margin-bottom: 15px;
+        border-bottom: 2px solid #cc9e51;
+        padding: 10px 0;
+    }
+    
+    .tabla-directorio tr:last-child {
+        border-bottom: none;
+    }
+    
+    .tabla-directorio td {
+        text-align: right;
+        padding-left: 45%;
+        position: relative;
+        border-bottom: 1px dashed #eee;
+    }
+    
+    .tabla-directorio td:last-child {
+        border-bottom: none;
+    }
+    
+    .tabla-directorio td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        width: 40%;
+        text-align: left;
+        font-weight: bold;
+        color: #333;
+    }
+}

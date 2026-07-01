@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Bienvenido a la FAD</title>
+</head>
+<body>
+    <header>
+        <div class="logoUnidadFAD">
+            <img src="public/img/logoUnidadFAD.png" alt="logo Unidad FAD"/>
+        </div>
+        <br>
+        <h1 style="font-size: 2.5rem;">Mapa de la FAD</h1>
+    </header>
+    <main>
+        <div class="contenedor-mapa-completo">
+            <p class="indicador-scroll">
+                <i class="fas fa-arrows-alt-h"></i> Desliza con el dedo hacia la derecha para explorar el mapa completo
+            </p>
+    
+            <div class="contenedor-mapa">
+                <img src="public/img/planos-FAD-ubi.jpg" alt="Mapa de las instalaciones de la FAD" class="mapa-responsivo">
+            </div>
+        </div>
+
+        <div class="guia-edificios">
+    <h2>Guía de Edificios y Niveles</h2>
+    <p class="subtitulo-guia">Haz clic en cada nivel para conocer qué oficinas o aulas se encuentran ahí.</p>
+
+    <div class="tarjeta-edificio">
+        <h3>Edificio A <span class="tag-edificio">(Administrativo)</span></h3>
+        
+        <details class="nivel-desplegable">
+            <summary>Primer nivel <span class="tag-edificio">(Planta baja)</span> </summary>
+            <div class="contenido-nivel">
+                <ul>
+                    <li><i class="fas fa-door-open"></i> Exposala</li>
+                    <li><i class="fas fa-restroom"></i> Baños</li>
+                </ul>
+            </div>
+        </details>
+
+        <details class="nivel-desplegable">
+            <summary>Segundo nivel</summary>
+            <div class="contenido-nivel">
+                <ul>
+                    <li><i class="fas fa-user-shield"></i> Subdirección Administrativa</li>
+                    <li><i class="fas fa-file-invoice"></i> Control Escolar</li>
+                    <li><i class="fas fa-graduation-cap"></i> Coordinación de la Licenciatura en Diseño Gráfico</li>
+                    <li><i class="fas fa-graduation-cap"></i> Coordinación de la Licenciatura en Diseño Industrial</li>
+                    <li><i class="fas fa-graduation-cap"></i> Coordinación de la Licenciatura en Arquitectura</li>
+                    <li><i class="fas fa-graduation-cap"></i> Coordinación de la Licenciatura en Administración y Promoción de la Obra Urbana</li>
+                    <li><i class="fas fa-graduation-cap"></i> Tutoría Académica</li>
+                    <li><i class="fas fa-landmark"></i> Difusión Cultural</li>
+
+                </ul>
+            </div>
+        </details>
+    </div>
+
+    <div class="tarjeta-edificio">
+        <h3>Edificio B <span class="tag-edificio">(Aulas y talleres)</span></h3>
+        
+        <div class="seccion-nomenclatura">
+        <h2>¿Cómo entender la nomenclatura de las aulas?</h2>
+        
+        <p class="texto-introductorio">
+            Todas las aulas y talleres de la FAD siguen un orden lógico para que no te pierdas:
+        </p>
+        
+        <div class="contenedor-imagen-nomenclatura">
+            <img src="public/img/nomenclaturaAula.png" alt="Explicación de la nomenclatura de aulas de la FAD" class="imagen-nomenclatura">
+        </div>
+    </div>
+
+
+
+        <details class="nivel-desplegable">
+            <summary>Primer nivel <span class="tag-edificio">(Planta baja)</span></summary>
+            <div class="contenido-nivel">
+                <ul>
+                    <li><i class="fas fa-school"></i> Dirección </li>
+                    <li><i class="fas fa-school"></i> Subdirección Académica</li>
+                    <li><i class="fas fa-plane"></i> Movilidad estudiantil</li>
+                    <li><i class="fas fa-chalkboard-teacher"></i> Aulas B107 a B111</li>
+                    <li><i class="fas fa-laptop-code"></i> Sala de cómputo 1 PC (SC1-PC)</li>
+                    <li><i class="fas fa-laptop-code"></i> Sala de cómputo 2 MAC (SC2-MAC)</li>
+                    <li><i class="fas fa-laptop-code"></i> Sala de cómputo 3 MAC (SC3-MAC)</li>
+                    <li><i class="fas fa-laptop-code"></i> Sala de cómputo 4 PC (SC4-PC)</li>
+                    <li><i class="fas fa-laptop-code"></i> Sala de cómputo 5 PC (SC5-PC)</li>
+                    <li><i class="fas fa-restroom"></i> Baños</li>
+                </ul>
+            </div>
+        </details>
+
+
+
+        <details class="nivel-desplegable">
+            <summary>Segundo nivel</summary>
+            <div class="contenido-nivel">
+                <ul>
+                    <li><i class="fas fa-chalkboard-teacher"></i> Aulas B201 a B209</li>
+                    <li><i class="fas fa-chalkboard-teacher"></i> Aula Virtual</li>
+                    <li><i class="fas fa-graduation-cap"></i> Sala de titulación</li>
+                    <li><i class="fas fa-briefcase-medical"></i> Consultorio médico</li>
+                    <li><i class="fas fa-restroom"></i> Baños</li>
+                </ul>
+            </div>
+        </details>
+
+        <details class="nivel-desplegable">
+            <summary>Tercer nivel</summary>
+            <div class="contenido-nivel">
+                <ul>
+                    <li><i class="fas fa-chalkboard-teacher"></i> Aulas/Talleres B301 a B311</li>
+                </ul>
+            </div>
+        </details>
+
+        <details class="nivel-desplegable">
+            <summary>Cuarto nivel</summary>
+            <div class="contenido-nivel">
+                <ul>
+                    <li><i class="fas fa-chalkboard-teacher"></i> Aulas B401 a B412</li>
+                    <li><i class="fas fa-scissors"></i> Kinder </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+
+
+        <div class="tarjeta-edificio">
+            <h3>Edificio C <span class="tag-edificio">(Servicios escolares)</span></h3>
+            
+            <details class="nivel-desplegable">
+                <summary>Primer nivel <span class="tag-edificio">(Planta baja)</span> </summary>
+                <div class="contenido-nivel">
+                    <ul>
+                        <li><i class="fas fa-book"></i> Biblioteca</li>
+                    </ul>
+                </div>
+            </details>
+
+
+            <details class="nivel-desplegable">
+                <summary>Segundo nivel </summary>
+                <div class="contenido-nivel">
+                    <ul>
+                        <li><i class="fas fa-trophy"></i> Evaluación profesional </li>
+                        <li><i class="fas fa-heart"></i> Consultorio psicológico </li>
+                        <li><i class="fas fa-laptop-code"></i> Sala de cómputo 6 PC (SC6-PC)</li>
+                        <li><i class="fas fa-laptop-code"></i> Sala de cómputo 7 PC (SC7-PC)</li>
+
+                    </ul>
+                </div>
+            </details>
+
+            <details class="nivel-desplegable">
+                <summary>Tercer nivel </summary>
+                <div class="contenido-nivel">
+                    <ul>
+                        <li><i class="fas fa-headphones"></i> Autoacceso </li>
+                        <li><i class="fas fa-language"></i> Coordinación de inglés </li>
+                        <li><i class="fas fa-hand-holding-hand"></i> Extensión y vinculación</li>
+                        <li><i class="fas fa-people-carry-box"></i> Servicio social</li>
+                        <li><i class="fas fa-user-tie"></i> Prácticas profesionales</li>
+                        <li><i class="fas fa-receipt"></i> Becas</li>
+                        <li><i class="fas fa-globe"></i> Educación continua</li>
+
+                    </ul>
+                </div>
+            </details>
+        </div>
+
+
+        <div class="tarjeta-edificio">
+            <h3>Edificio D <span class="tag-edificio">(Talleres especializados)</span></h3>
+            
+            <details class="nivel-desplegable">
+                <summary>Primer nivel <span class="tag-edificio">(Planta baja)</span> </summary>
+                <div class="contenido-nivel">
+                    <ul>
+                        <li><i class="fas fa-mug-saucer"></i> Taller especializado en cerámica</li>
+                    </ul>
+                </div>
+            </details>
+
+
+            <details class="nivel-desplegable">
+                <summary>Segundo nivel</summary>
+                <div class="contenido-nivel">
+                    <ul>
+                        <li><i class="fas fa-gem"></i> Taller especializado en joyería</li>
+                    </ul>
+                </div>
+            </details>
+
+        </div>
+
+
+        <div class="tarjeta-edificio">
+            <h3>Edificio E <span class="tag-edificio">(Talleres especializados)</span></h3>
+            
+            <details class="nivel-desplegable">
+                <summary>Primer nivel <span class="tag-edificio">(Planta baja)</span> </summary>
+                <div class="contenido-nivel">
+                    <ul>
+                        <li><i class="fas fa-tree"></i> Taller especializado en maderas</li>
+                        <li><i class="fas fa-magnet"></i> Taller especializado en metales</li>
+                        <li><i class="fas fa-burst"></i> Taller especializado en soldadura</li>
+                        <li><i class="fas fa-trowel"></i> Laboratorio de materiales</li>
+                        <li><i class="fas fa-restroom"></i> Baños</li>
+                    </ul>
+                </div>
+            </details>
+
+
+            <details class="nivel-desplegable">
+                <summary>Segundo nivel</summary>
+                <div class="contenido-nivel">
+                    <ul>
+                        <li><i class="fas fa-camera"></i> Taller especializado en fotografía</li>
+                        <li><i class="fas fa-video"></i> Taller especializado en audio y video</li>
+                        <li><i class="fas fa-rug"></i> Taller especializado en textiles</li>
+                        <li><i class="fas fa-photo-film"></i> Sala de edición digital</li>
+                        <li><i class="fas fa-laptop-code"></i> Sala de cómputo 8 PC (SC8-PC)</li>
+                        <li><i class="fas fa-paintbrush"></i> Salón de dibujo</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details class="nivel-desplegable">
+                <summary>Tercer nivel</summary>
+                <div class="contenido-nivel">
+                    <ul>
+                        <li><i class="fas fa-people-group"></i> Coordinación de talleres</li>
+                        <li><i class="fas fa-brush"></i> Taller especializado en serigrafía</li>
+                        <li><i class="fas fa-paint-roller"></i> Taller especializado en grabado</li>
+                        <li><i class="fas fa-bottle-water"></i> Taller especializado en plásticos</li>
+                        <li><i class="fas fa-print"></i> Taller especializado en impresión 3D</li>
+                        <li><i class="fas fa-sun"></i> Taller especializado en Corte láser y CNC</li>
+                    </ul>
+                </div>
+            </details>
+
+        </div>
+    </main>
+    
+
+    <footer>
+        <p>&copy; 2026</p>
+    </footer>
+
+</body>
+</html>
